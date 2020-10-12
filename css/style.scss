@@ -4,11 +4,12 @@
   border-radius: 50%;
   background-color: #eeeef0;
   overflow: hidden;
-  display: inline-block; }
-  .team_logo img {
+  display: inline-block;
+  img {
     display: block;
-    width: 100%; }
-  .team_logo:after {
+    width: 100%;
+  }
+  &:after {
     position: absolute;
     top: -76px;
     left: 136px;
@@ -16,9 +17,13 @@
     font-size: 40px;
     display: block;
     transition: 0.5s;
-    color: red; }
-  .team_logo:hover:after {
-    top: 76px;
-    transform: rotate(360deg); }
+    color: red;
+  }
+  &:hover {
+    &:after{
+      top: 76px;
+      transform: rotate(360deg);
+    }
+  }
+}
 
-/*# sourceMappingURL=style.css.map */
