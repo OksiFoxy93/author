@@ -41,6 +41,7 @@ body {
         padding-top: 35px;
         @media screen and (max-width: 767px) {
           font-size: 18px;
+          border-bottom: 1px solid #485460;
         }
         &:hover {
           background-color: #f8f9fb;
@@ -87,6 +88,8 @@ body {
       padding-top: 140px;
       margin-bottom: 30px;
       margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     @media screen and (max-width: 767px) {
       font-size: 40px;
       padding-top: 140px;
@@ -96,18 +99,23 @@ body {
       width: 400px;
       margin: auto;
       margin-bottom: 55px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
     p {
         font-size: 18px;
+      padding-left: 15px;
+      padding-right: 15px;
       }
     }
   a {
-      font-size: 20px;
-      color: white;
-      padding: 10px 30px;
-      border: 3px solid white;
-      border-radius: 5px;
-    &:hover {
-        text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    &:hover{
       background-color: rgba(255,255,255, 0.4);
       }
     }
@@ -146,12 +154,12 @@ body {
     @media screen and (max-width: 767px) {
       position: absolute;
       left: 48%;
-      bottom: 10%;
+      bottom: 6%;
       display: flex;
       align-items: center;
      .owl-dot span{
       display: inline-block;
-      background-color: rgba(255, 255, 255, 0.6) !important;
+      background-color: rgba(255, 255, 255, 0.6);
       border-radius: 50%;
       height: 6px;
       width: 6px;
@@ -195,12 +203,25 @@ body {
     }
     &:after {
       position: absolute;
-      top: 76px;
-      left: 136px;
-      content: "+";
-      font-size: 40px;
-      color: red;
+      top: 82px;
+      left: 130px;
+      content: url("../images/mark.png");
       display: none;
+      @media screen and (max-width: 1024px) {
+        left: 100px;
+      }
+      @media screen and (max-width: 769px) {
+        left: 166px;
+      }
+      @media screen and (max-width: 415px) {
+        left: 190px;
+      }
+      @media screen and (max-width: 376px) {
+        left: 170px;
+      }
+      @media screen and (max-width: 321px) {
+        left: 140px;
+      }
     }
     &:hover {
       &:after {
@@ -227,7 +248,142 @@ body {
 
 .coupons {
   background-color: #f1f1f1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 1024px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @media screen and (max-width: 767px){
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .coupon {
+    width: 369px;
+    background-color: white;
+    padding: 0;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      margin: auto;
+    }
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        text-align: center;
+        font-size: 14px;
+        line-height: 47px;
+        border: 1px solid #ecf0f1;
+        color: #8c9299;
+        a {
+          text-decoration: none;
+          color: white;
+          background-color: #485460;
+          margin-bottom: 30px;
+          margin-top: 30px;
+          line-height: 40px;
+          padding-right: 50px;
+          padding-left: 50px;
+          display: inline-block;
+          border-radius: 4px;
+          font-weight: 600;
+        }
+      }
+      .buy {
+        background-color: #f8f9fb;
+      }
+      .coupon-name {
+        line-height: 75px;
+        color: white;
+        background-color: #485460;
+        font-size: 26px;
+        border: none;
+      }
+      .coupon-price {
+        line-height: 75px;
+        color: #485460;
+        background-color: #f8f9fb;
+        font-size: 20px;
+        border-top: none;
+      }
+    }
+  }
+  .coupon.pro {
+    .coupon-name, a {
+      background-color: #49cbcd;
+    }
+  }
 }
 
+.contact-us {
+  background-image: url("../images/contact_us.png");
+  color: white;
+  background-size: cover;
+  padding-bottom: 95px;
+  h2 {
+    margin: 0;
+    font-size: 42px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media screen and (max-width: 767px){
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  .contact-text {
+    width: 450px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 23px;
+      color: #989898;
+    }
+    .social {
+      p {
+        color: #bface2;
+        line-height: 28px;
+      }
+      .soc_icon {
+        width: 41px;
+        line-height: 41px!important;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+      .fa-facebook-f {
+        background-color: #3b5997;
+      }
+      .fa-twitter {
+        background-color: #3ec2f3;
+      }
+      .fa-google-plus-g {
+        background-color: #e44c41;
+      }
+    }
+  }
+}
 
 

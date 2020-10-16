@@ -43,6 +43,7 @@ body {
 @media screen and (max-width: 767px) {
   .navbar.navbar-default .navbar-nav li a {
     font-size: 18px;
+    border-bottom: 1px solid #485460;
   }
 }
 .navbar.navbar-default .navbar-nav li a:hover {
@@ -85,6 +86,8 @@ body {
   padding-top: 140px;
   margin-bottom: 30px;
   margin-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (max-width: 767px) {
   .owl-carousel h1 {
@@ -97,8 +100,15 @@ body {
   margin: auto;
   margin-bottom: 55px;
 }
+@media screen and (max-width: 767px) {
+  .owl-carousel .owl-content {
+    width: 100%;
+  }
+}
 .owl-carousel .owl-content p {
   font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .owl-carousel a {
   font-size: 20px;
@@ -106,9 +116,9 @@ body {
   padding: 10px 30px;
   border: 3px solid white;
   border-radius: 5px;
+  text-decoration: none;
 }
 .owl-carousel a:hover {
-  text-decoration: none;
   background-color: rgba(255, 255, 255, 0.4);
 }
 .owl-carousel .owl-nav {
@@ -148,13 +158,13 @@ body {
   .owl-carousel .owl-dots {
     position: absolute;
     left: 48%;
-    bottom: 10%;
+    bottom: 6%;
     display: flex;
     align-items: center;
   }
   .owl-carousel .owl-dots .owl-dot span {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
     height: 6px;
     width: 6px;
@@ -198,12 +208,35 @@ body {
 }
 .team .team_logo:after {
   position: absolute;
-  top: 76px;
-  left: 136px;
-  content: "+";
-  font-size: 40px;
-  color: red;
+  top: 82px;
+  left: 130px;
+  content: url("../images/mark.png");
   display: none;
+}
+@media screen and (max-width: 1024px) {
+  .team .team_logo:after {
+    left: 100px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .team .team_logo:after {
+    left: 166px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .team .team_logo:after {
+    left: 190px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .team .team_logo:after {
+    left: 170px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .team .team_logo:after {
+    left: 140px;
+  }
 }
 .team .team_logo:hover:after {
   display: block;
@@ -228,6 +261,152 @@ body {
 
 .coupons {
   background-color: #f1f1f1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .coupons {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .coupons {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
+.coupons .coupon {
+  width: 369px;
+  background-color: white;
+  padding: 0;
+}
+@media screen and (max-width: 1024px) {
+  .coupons .coupon {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .coupons .coupon {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .coupons .coupon {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+.coupons .coupon ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.coupons .coupon ul li {
+  text-align: center;
+  font-size: 14px;
+  line-height: 47px;
+  border: 1px solid #ecf0f1;
+  color: #8c9299;
+}
+.coupons .coupon ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #485460;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.coupons .coupon ul .buy {
+  background-color: #f8f9fb;
+}
+.coupons .coupon ul .coupon-name {
+  line-height: 75px;
+  color: white;
+  background-color: #485460;
+  font-size: 26px;
+  border: none;
+}
+.coupons .coupon ul .coupon-price {
+  line-height: 75px;
+  color: #485460;
+  background-color: #f8f9fb;
+  font-size: 20px;
+  border-top: none;
+}
+.coupons .coupon.pro .coupon-name, .coupons .coupon.pro a {
+  background-color: #49cbcd;
+}
+
+.contact-us {
+  background-image: url("../images/contact_us.png");
+  color: white;
+  background-size: cover;
+  padding-bottom: 95px;
+}
+.contact-us h2 {
+  margin: 0;
+  font-size: 42px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 767px) {
+  .contact-us h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.contact-us .contact-text {
+  width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .contact-us .contact-text {
+    width: 100%;
+  }
+}
+.contact-us .contact-text h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.contact-us .contact-text p {
+  font-size: 14px;
+  line-height: 23px;
+  color: #989898;
+}
+.contact-us .contact-text .social p {
+  color: #bface2;
+  line-height: 28px;
+}
+.contact-us .contact-text .social .soc_icon {
+  width: 41px;
+  line-height: 41px !important;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.contact-us .contact-text .social .fa-facebook-f {
+  background-color: #3b5997;
+}
+.contact-us .contact-text .social .fa-twitter {
+  background-color: #3ec2f3;
+}
+.contact-us .contact-text .social .fa-google-plus-g {
+  background-color: #e44c41;
 }
 
 /*# sourceMappingURL=style.css.map */
