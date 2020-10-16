@@ -1,3 +1,10 @@
+@import "bootstrap.min.css";
+@import "bootstrap-theme.min.css";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap";
+@import "../css/media-queries.css";
+@import "../css/owl.carousel.min.css";
+@import "../css/owl.theme.default.min.css";
+
 @font-face {
   src: url("../fonts/glyphicons-halflings-regular.svg");
   src: url("../fonts/glyphicons-halflings-regular.eot");
@@ -5,7 +12,6 @@
   src: url("../fonts/glyphicons-halflings-regular.woff");
   src: url("../fonts/glyphicons-halflings-regular.woff2");
 }
-
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -386,4 +392,23 @@ body {
   }
 }
 
-
+form {
+  .form-control {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #c1c1c1;
+  }
+  #exampleTextareaMassage {
+    height: 180px;
+  }
+  .btn.btn-default {
+    color: white;
+    width: 100%;
+    box-shadow: none;
+    background-image: none;
+    background-color: #49cbcd;
+    border: none;
+    line-height: 50px;
+  }
+}
